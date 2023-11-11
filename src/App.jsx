@@ -7,7 +7,7 @@ import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 
 const App = () => {
-  const [active, setActive] = useState("");
+  const [active, setActive] = useState("home");
 
   return (
     <>

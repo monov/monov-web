@@ -11,9 +11,9 @@ const Navbar = ({setActive, active}) => {
   return (
     <div className="navbar">
       <div className="navbar-buttons-wrapper">
-        <Link to="/portfolio" onClick={() => {handleClick('port')}} className="navbar-button">Portfolio</Link>
-        <Link to="/" onClick={() => {handleClick('home')}} className="navbar-button">Home</Link>
-        <Link to="blog" onClick={() => {handleClick('blog')}} className="navbar-button">Blog</Link>
+        <Link to="/portfolio" onClick={() => {handleClick('port')}} className={`navbar-button ${active === 'port' ? 'active' : ''}`}>Portfolio</Link>
+        <Link to="/" onClick={() => {handleClick('home')}} className={`navbar-button ${active === 'home' ? 'active' : ''}`}>Home</Link>
+        <Link to="blog" onClick={() => {handleClick('blog')}} className={`navbar-button ${active === 'blog' ? 'active' : ''}`}>Blog</Link>
       </div>
     </div>
   );

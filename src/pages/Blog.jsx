@@ -1,10 +1,17 @@
 import React from "react";
-import Navbar from "../components/Navbar";
+import "./Blog.css";
+import { motion } from "framer-motion";
 
-const Blog = ({setActive,active}) => {
+const Blog = () => {
   return (
-    <div>
-      Blog
+    <div className="blog-body">
+      <motion.div
+        initial={{ opacity: 0, y: 80 }}
+        animate={{ opacity: 1, y: 0 }}
+        className="text"
+      >
+        Blog
+      </motion.div>
     </div>
   );
 };

@@ -1,0 +1,9 @@
+.blog-body{
+  display: flex;
+  justify-content: center;
+}
+
+.text{
+  margin-top: 5rem;
+  font-size: 5rem;
+}

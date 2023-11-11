@@ -1,0 +1,15 @@
+.home-body{
+  display: flex;
+  justify-content: center;
+}
+ 
+.home-pfp{
+  margin-top: 5rem;
+  height: 30dvh;
+  width: 20rem;
+  background: rgb(82, 82, 82);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 2px var(--accent-color);
+}
