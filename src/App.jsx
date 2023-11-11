@@ -1,50 +1,27 @@
 import React, { useState } from "react";
-import './App.css'
-import Navbar from './components/Navbar'
+import "./App.css";
+import Home from "./pages/Home";
+import Blog from "./pages/Blog";
+import Portfolio from "./pages/Portfolio";
+import { Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
 
 const App = () => {
-  const [active, setActive] = useState("")
-
-  let content;
-
-  switch (active) {
-    case 'home':
-      content = <Home />;
-      break;
-    case 'port':
-      content = <Portfolio />;
-      break;
-    case 'blog':
-      content = <Blog />;
-      break;
-    default:
-      content = <Home />;
-  }
+  const [active, setActive] = useState("");
 
   return (
     <>
-      <Navbar setActive={setActive} active={active}/>
-      {content}
+    <Navbar setActive={setActive} active={active} />
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route
+          path="/blog"
+          element={<Blog />}
+        ></Route>
+        <Route path="/portfolio" element={<Portfolio />}></Route>
+      </Routes>
     </>
-  )
-}
+  );
+};
 
-const Home = ( ) => {
-  return(
-    <>Home</>
-  )
-}
-
-const Portfolio = () => {
-  return(
-    <>Portfolio</>
-  )
-}
-
-const Blog = () => {
-  return(
-    <>Blog</>
-  )
-}
-
-export default App
+export default App;
