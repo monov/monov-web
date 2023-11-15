@@ -6,21 +6,19 @@ import Portfolio from "./pages/Portfolio";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 
+
 const App = () => {
   const [active, setActive] = useState("home");
 
   return (
-    <>
-    <Navbar setActive={setActive} active={active} />
+    <div>
+      <Navbar setActive={setActive} active={active} />
       <Routes>
         <Route path="/" element={<Home />}></Route>
-        <Route
-          path="/blog"
-          element={<Blog />}
-        ></Route>
+        <Route path="/blog" element={<Blog />}></Route>
         <Route path="/portfolio" element={<Portfolio />}></Route>
       </Routes>
-    </>
+    </div>
   );
 };
 

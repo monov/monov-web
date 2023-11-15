@@ -1,15 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Ubuntu+Mono:wght@400;700&display=swap');
+
 .home-body{
   display: flex;
   justify-content: center;
 }
  
+.home-wrapper{
+  width: 60rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 .home-pfp{
-  margin-top: 5rem;
-  height: 30rem;
-  width: 20rem;
+  height: 25rem;
+  width: 18rem;
   background: rgb(82, 82, 82);
   display: flex;
   align-items: center;
   justify-content: center;
   border: solid 2px var(--accent-color);
+  border-radius: 10px;
+}
+
+section{
+  margin-top: 5rem;
+}
+
+.hero{
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+}
+
+.hero-txt-wrapper{
+  width: 30rem;
+  margin-left: 3rem;
+}
+
+.hero-txt-wrapper h1{
+  font-size: 3rem;
+}
+
+.hero-txt-wrapper p{
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+
+.word-rap{
+  color: rgb(0, 179, 255);
+  font-size: 3rem;
+  font-family: "Rap";
+}
+
+.word-hist{
+  color: rgb(231, 252, 0);
+  font-weight: 600;
+  font-size: 2.2rem;
+}
+
+.word-frnt{
+  font-family: 'Ubuntu Mono', monospace;
+  color: rgb(0, 255, 166);
+  font-weight: 600;
+  font-size: 2.4rem;
+}
+
+@font-face {
+  font-family: "Rap";
+  src: url("/src/assets/fonts/Chomsky.otf");
+}
+
+.graphs{
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+}
+
+.graph{
+  border-radius: 10px;
+  height: 15rem;
+  width: 15rem;
+  background: #1f1f1f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 2.2rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: .2s;
+}
+
+.graph-icon{
+  font-size: 8rem;
+  margin-bottom: 1rem;
+}
+
+.graph:nth-of-type(1){
+  border: solid 4px var(--accent-color);
+  color: var(--accent-color);
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+.graph:nth-of-type(1):hover{
+  background: rgb(0, 53, 40);
+}
+
+.graph:nth-of-type(2):hover{
+  background: rgb(0, 45, 65);
+}
+
+.graph:nth-of-type(3):hover{
+  background: rgb(65, 71, 0);
+}
+
+.graph:nth-of-type(2) {
+  border: solid 4px rgb(0, 179, 255);
+  color: rgb(0, 179, 255);
+  font-family: Rap;
+  font-size: 2.4rem;
+}
+
+.graph:nth-of-type(3) {
+  border: solid 4px rgb(231, 252, 0);
+  color: rgb(231, 252, 0);
+}
+
+.tech-stack{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 22rem;
+}
+
+.ts-wrapper{
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.s-ts-wrapper, .s-ss-wrapper {
+  text-align: center;
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+.s-ts-wrapper h1{
+  font-size: 2.4rem;
+}
+
+.s-ss-wrapper h1{
+  font-size: 2.4rem;
+}
+
+li{
+  font-size: 1.4rem;
+  transition: .1s;
+  line-height: 3rem;
+  cursor: crosshair;
+}
+
+.s-ts-wrapper li:nth-of-type(1){
+  color: orange;
+}
+
+.s-ts-wrapper li:nth-of-type(2){
+  color: yellow;
+}
+
+.s-ts-wrapper li:nth-of-type(3){
+  color: rgb(0, 149, 255);
+}
+
+.s-ts-wrapper li:nth-of-type(4){
+  color: var(--accent-color);
+}
+
+.s-ts-wrapper li:nth-of-type(5){
+  color: rgb(0, 200, 255);
+}
+
+.s-ts-wrapper li:nth-of-type(6){
+  color: rgb(255, 0, 221);
+}
+
+.s-ts-wrapper li:nth-of-type(7){
+  color: greenyellow;
+}
+
+.s-ss-wrapper li{
+  color: var(--accent-color);
+}
+
+.s-ts-wrapper li:hover{
+  font-size: 1.8rem;
+}
+
+.s-ss-wrapper li:hover{
+  font-size: 1.8rem;
+}
+
+.rap h1{
+  font-size: 2.4rem;
+}
+
+.rap{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.rap-wrapper{
+  margin-top: 2rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  justify-items: center;
+}
+
+.rapper{
+  margin-top: 2rem;
+  height: 25rem;
+  width: 18rem;
+  background: rgb(82, 82, 82);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 2px var(--accent-color);
+  border-radius: 10px;
+  transition: .2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.rapper span{
+  height: 100%;
+  width: 100%;
+  background: #0000009c;
+  opacity: 1;
+  transition: .2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0);
+  border-radius: 50%;
+}
+
+.rapper:hover span{
+  opacity: 1;
+  font-size: 2rem;
+  transform: scale(1);
+  border-radius: 0;
+}
+
+.em{
+  background: url("/src/assets/imgs/eminem.jpg");
+  background-position: 100% 20%;
+  background-size: cover;
+}
+
+.cole{
+  background: url("/src/assets/imgs/cole.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.kdot{
+  background: url("/src/assets/imgs/kdot.jpg");
+  background-position: 100% 100%;
+  background-size: cover;
+}
+
+.nf{
+  background: url("/src/assets/imgs/nf.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.jid{
+  background: url("/src/assets/imgs/jid.jpg");
+  background-position: 60% 10%;
+  background-size: 150%;
+}
+
+.pac{
+  background: url("/src/assets/imgs/tupac.webp");
+  background-position: center;
+  background-size: cover;
 }

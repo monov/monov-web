@@ -10,7 +10,7 @@ const Blog = () => {
         animate={{ opacity: 1, y: 0 }}
         className="text"
       >
-        Blog
+        No posts yet...
       </motion.div>
     </div>
   );
