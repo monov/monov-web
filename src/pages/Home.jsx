@@ -19,7 +19,7 @@ const Home = () => {
           transition={{ delay: 0.2 }}
           className="hero"
         >
-          <div className="home-pfp">Photo</div>
+          <div className="home-pfp"></div>
           <div className="hero-txt-wrapper">
             <h1>Me?</h1>
             <p>

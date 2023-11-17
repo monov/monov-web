@@ -14,14 +14,17 @@
 }
 
 .home-pfp{
-  height: 25rem;
-  width: 18rem;
-  background: rgb(82, 82, 82);
+  height: 16rem;
+  width: 16rem;
+  background: url("/src/assets/imgs/me.JPG");
+  background-position: 45% 60%;
+  background-size: 200%;
   display: flex;
   align-items: center;
   justify-content: center;
   border: solid 2px var(--accent-color);
-  border-radius: 10px;
+  border-radius: 100%;
+  margin-top: 2rem;
 }
 
 section{
@@ -260,34 +263,40 @@ li{
   background: url("/src/assets/imgs/eminem.jpg");
   background-position: 100% 20%;
   background-size: cover;
+  border-color: rgb(175, 128, 0);
 }
 
 .cole{
   background: url("/src/assets/imgs/cole.jpg");
   background-position: center;
   background-size: cover;
+  border-color: rgb(0, 153, 255);
 }
 
 .kdot{
   background: url("/src/assets/imgs/kdot.jpg");
   background-position: 100% 100%;
   background-size: cover;
+  border-color: rgb(175, 0, 0);
 }
 
 .nf{
   background: url("/src/assets/imgs/nf.jpg");
   background-position: center;
   background-size: cover;
+  border-color: rgb(104, 104, 104);
 }
 
 .jid{
   background: url("/src/assets/imgs/jid.jpg");
   background-position: 60% 10%;
   background-size: 150%;
+  border-color: rgb(254, 0, 203)
 }
 
 .pac{
   background: url("/src/assets/imgs/tupac.webp");
   background-position: center;
   background-size: cover;
+  border-color: rgb(0, 164, 25)
 }
