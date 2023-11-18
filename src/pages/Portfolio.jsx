@@ -7,7 +7,13 @@ const Portfolio = () => {
     <div className="port-body">
       <div className="port-wrapper">
         <section className="projects">
-          <h1>Projects?</h1>
+          <motion.h1
+            initial={{  opacity: 0 }}
+            animate={{  opacity: 1 }}
+            transition={{ delay: 0.2 }}
+          >
+            Projects?
+          </motion.h1>
           <div className="projects-wrapper">
             <motion.div
               initial={{ x: -100, opacity: 0 }}
@@ -16,10 +22,11 @@ const Portfolio = () => {
               className="project"
             >
               <div className="projpic-wrapper">
-                <div className="projpic"></div>
+                <div className="projpic p1"></div>
               </div>
-
-              <p>text</p>
+              <div className="p1-wrapper">
+                🎓 Platform to Rate and Review Professors.
+              </div>
             </motion.div>
 
             <motion.div
@@ -29,10 +36,12 @@ const Portfolio = () => {
               className="project"
             >
               <div className="projpic-wrapper">
-                <div className="projpic"></div>
+                <div className="projpic p2"></div>
               </div>
 
-              <p>text</p>
+              <div className="p2-wrapper">
+                📟 CLI tool that logs a random quote
+              </div>
             </motion.div>
           </div>
         </section>

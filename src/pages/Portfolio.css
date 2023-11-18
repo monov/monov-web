@@ -12,6 +12,12 @@
   width: 100%;
 }
 
+.projects h1{
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
 .projects-wrapper{
   width: 100%;
   display: flex;
@@ -26,6 +32,15 @@
   margin-top: 1rem;
   border: 2px solid var(--accent-color);
   overflow: hidden;
+  cursor: pointer;
+}
+
+.project:nth-of-type(1){
+  border-color: #f73285;
+}
+
+.project:nth-of-type(2){
+  border-color: #5ea6ff;
 }
 
 .projpic-wrapper{
@@ -38,14 +53,40 @@
   justify-content: center;
   height: 17rem;
   width: 100%;
-  background: url("/src/assets/imgs/jid.jpg");
   background-position: center;
   background-size: cover;
   transition: .4s;
 }
 
-.project:hover .projpic{
-  transform: rotate(15deg) scale(2.5);
-  filter: brightness(.2);
+.projpic.p2{
+  background: url("/src/assets/imgs/proj2.png"), #235ca3;
+  background-position: center;
+  background-size: cover;
 }
 
+.projpic.p1{
+  background: url("/src/assets/imgs/proj1.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.project:hover .projpic{
+  transform: rotate(15deg) scale(1.5);
+  filter: brightness(.5);
+}
+
+.p1-wrapper, .p2-wrapper{
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .2s;
+}
+
+.project:hover .p1-wrapper{
+  color: #f73285;
+}
+
+.project:hover .p2-wrapper{
+  color: #5ea6ff;
+}
