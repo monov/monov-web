@@ -25,7 +25,7 @@ const Portfolio = () => {
                 <div className="projpic p1"></div>
               </div>
               <div className="p1-wrapper">
-                🎓 Platform to Rate and Review Professors.
+                🎓 Platform to Review Professors.
               </div>
             </motion.div>
 
