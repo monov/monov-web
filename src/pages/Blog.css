@@ -7,3 +7,10 @@
   margin-top: 5rem;
   font-size: 5rem;
 }
+
+@media ( width < 450px ){
+  .text{
+    margin-top: 10rem;
+    font-size: 2rem;
+  }
+}

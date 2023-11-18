@@ -1,6 +1,7 @@
 .port-body{
   display: flex;
   justify-content: center;
+  overflow: hidden;
 }
 
 .port-wrapper{
@@ -71,7 +72,7 @@
 }
 
 .project:hover .projpic{
-  transform: rotate(15deg) scale(1.5);
+  transform: rotate(5deg) scale(1.5);
   filter: brightness(.5);
 }
 
@@ -81,6 +82,7 @@
   justify-content: center;
   align-items: center;
   transition: .2s;
+  font-size: 1.2rem;
 }
 
 .project:hover .p1-wrapper{
@@ -89,4 +91,15 @@
 
 .project:hover .p2-wrapper{
   color: #5ea6ff;
+}
+
+@media ( width < 450px ){
+  .projects-wrapper{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project{
+    width: 22rem;
+  }
 }
