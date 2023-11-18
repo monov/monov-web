@@ -12,7 +12,6 @@ const Navbar = ({ setActive, active }) => {
 
   const hamClick = () => {
     setHamActive((v) => !v);
-    console.log(hamActive);
   };
 
   return (
@@ -53,11 +52,41 @@ const Navbar = ({ setActive, active }) => {
       </div>
       <div className={`hamburger ${hamActive ? "active" : ""}`}>
         <div onClick={hamClick} className="hamburger-in"></div>
-        <div className={`menu-wrapper ${hamActive ? "active" : ""}`}>
-          <Link onClick={() => {setHamActive(false)}} to="/" className={`menu ${hamActive ? "active" : ""}`}>Home</Link>
-          <Link onClick={() => {setHamActive(false)}} to="/portfolio" className={`menu ${hamActive ? "active" : ""}`}>Portofolio</Link>
-          <Link onClick={() => {setHamActive(false)}} to="/blog" className={`menu ${hamActive ? "active" : ""}`}>Blog</Link>
-        </div>
+        <motion.div
+          key={hamActive}
+          initial={{ opacity: 0, y: 100 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2 }}
+          className={`menu-wrapper ${hamActive ? "active" : ""}`}
+        >
+          <Link
+            onClick={() => {
+              setHamActive(false);
+            }}
+            to="/"
+            className={`menu ${hamActive ? "active" : ""}`}
+          >
+            Home
+          </Link>
+          <Link
+            onClick={() => {
+              setHamActive(false);
+            }}
+            to="/portfolio"
+            className={`menu ${hamActive ? "active" : ""}`}
+          >
+            Portofolio
+          </Link>
+          <Link
+            onClick={() => {
+              setHamActive(false);
+            }}
+            to="/blog"
+            className={`menu ${hamActive ? "active" : ""}`}
+          >
+            Blog
+          </Link>
+        </motion.div>
       </div>
     </motion.div>
   );

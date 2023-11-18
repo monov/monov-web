@@ -52,6 +52,7 @@
   justify-content: center;
   display: none;
   transition: .2s;
+  overflow: hidden;
 }
 
 .hamburger.active{
@@ -80,7 +81,6 @@
 }
 
 .menu{
-  display: none;
   margin-top: 2rem;
   color: black;
   cursor: pointer;
@@ -88,10 +88,7 @@
   font-size: 2rem;
   font-weight: bolder;
   font-family: sans-serif;
-}
-
-.menu.active{
-  display: block;
+  transition: .4s;
 }
 
 .hamburger-in{
@@ -115,5 +112,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
   }
 }
