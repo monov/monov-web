@@ -6,7 +6,6 @@ import { useState } from "react";
 const Navbar = ({ setActive, active }) => {
   const handleClick = (act) => {
     setActive(act);
-    console.log(active);
   };
   const [hamActive, setHamActive] = useState(false);
 
@@ -25,27 +24,27 @@ const Navbar = ({ setActive, active }) => {
         <Link
           to="/portfolio"
           onClick={() => {
-            handleClick("port");
+            handleClick("/portfolio");
           }}
-          className={`navbar-button ${active === "port" ? "active" : ""}`}
+          className={`navbar-button ${active === "/portfolio" ? "active" : ""}`}
         >
           Portfolio
         </Link>
         <Link
           to="/"
           onClick={() => {
-            handleClick("home");
+            handleClick("/");
           }}
-          className={`navbar-button ${active === "home" ? "active" : ""}`}
+          className={`navbar-button ${active === "/" ? "active" : ""}`}
         >
           Home
         </Link>
         <Link
           to="blog"
           onClick={() => {
-            handleClick("blog");
+            handleClick("/blog");
           }}
-          className={`navbar-button ${active === "blog" ? "active" : ""}`}
+          className={`navbar-button ${active === "/blog" ? "active" : ""}`}
         >
           Blog
         </Link>

@@ -3,13 +3,14 @@ import "./App.css";
 import Home from "./pages/Home";
 import Blog from "./pages/Blog";
 import Portfolio from "./pages/Portfolio";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import Navbar from "./components/Navbar";
 
 
 const App = () => {
-  const [active, setActive] = useState("home");
-
+  const location = useLocation();
+  const currentUrl = location.pathname;
+  const [active, setActive] = useState(currentUrl);
   return (
     <div>
       <Navbar setActive={setActive} active={active} />

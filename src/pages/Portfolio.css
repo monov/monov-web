@@ -103,3 +103,14 @@
     width: 22rem;
   }
 }
+
+@media ( 450px < width < 1230px ){
+  .projects-wrapper{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project{
+    width: 25rem;
+  }
+}
