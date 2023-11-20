@@ -54,7 +54,7 @@ const Navbar = ({ setActive, active }) => {
         <div onClick={hamClick} className="hamburger-in"></div>
         <motion.div
           key={hamActive}
-          initial={{ opacity: 0, y: 100 }}
+          initial={{ opacity: 0, y: 100}}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
           className={`menu-wrapper ${hamActive ? "active" : ""}`}
