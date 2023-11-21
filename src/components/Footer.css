@@ -1,0 +1,34 @@
+.footer-body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  height: 3rem;
+  margin-top: calc(100dvh - 3rem);
+  background-color: var(--accent-color);
+  border: none;
+  overflow: hidden;
+  backdrop-filter: blur(100px);
+}
+
+.footer-icon{
+  font-size: 2rem;
+  fill: #1f1f1f;
+  margin-left: 1rem;
+  transition: .2s;
+}
+
+.frst{
+  margin-left: 0;
+}
+
+@media (width > 450px) {
+  .footer-body{
+    margin-top: calc(99dvh - 3rem);
+    width: 14rem;
+    border-radius: 20px;
+    border: solid 2px #1f1f1f;
+  }
+}

@@ -6,17 +6,14 @@ import { BsCodeSlash } from "react-icons/bs";
 
 const Home = () => {
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ delay: 0.1 }}
+    <div
       className="home-body"
     >
       <div className="home-wrapper">
         <motion.section
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          transition={{ delay: 0.2 }}
+          transition={{ delay: 0.3 }}
           className="hero"
         >
           <div className="home-pfp"></div>
@@ -35,7 +32,7 @@ const Home = () => {
           className="graphs"
           initial={{ x: 100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          transition={{ delay: 0.2 }}
+          transition={{ delay: 0.3 }}
         >
           <a className="graph" href="#code">
             <BsCodeSlash className="graph-icon n1" />
@@ -53,7 +50,7 @@ const Home = () => {
         <motion.section
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          transition={{ delay: 0.2 }}
+          transition={{ delay: 0.3 }}
           id="code"
           className="tech-stack"
         >
@@ -105,9 +102,34 @@ const Home = () => {
             </div>
           </div>
         </section>
+        <section className="history">
+          <h1>History?</h1>
+          <div className="meme"></div>
+          <h1>Events?</h1>
+          <div className="history-wrapper">
+            <a href="#" className="hist-title">
+              <div className="hist-pic truce">
+                <p>Christmas Truce</p>
+              </div>
+            </a>
+            <a href="" className="hist-title">
+              <div className="hist-pic ww1">
+                <p>World War I</p>
+              </div>
+            </a>
+            <a href="" className="hist-title">
+              <div className="hist-pic"></div>
+              <p>hello</p>
+            </a>
+            <a href="" className="hist-title">
+              <div className="hist-pic"></div>
+              <p>hello</p>
+            </a>
+          </div>
+        </section>
         <section></section>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

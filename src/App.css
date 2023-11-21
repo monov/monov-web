@@ -2,3 +2,9 @@
   margin: 0 auto;
   padding: 0;
 }
+
+.app{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}

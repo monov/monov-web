@@ -22,7 +22,7 @@
 .projects-wrapper{
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .project{
@@ -42,6 +42,7 @@
 
 .project:nth-of-type(2){
   border-color: #5ea6ff;
+  margin-left: 4rem;
 }
 
 .projpic-wrapper{
@@ -93,6 +94,10 @@
   color: #5ea6ff;
 }
 
+.project:nth-of-type(2){
+  margin-left: 2rem;
+}
+
 @media ( width < 450px ){
   .projects-wrapper{
     flex-direction: column;
@@ -101,6 +106,10 @@
 
   .project{
     width: 22rem;
+  }
+
+  .project:nth-of-type(2){
+    margin-left: 0;
   }
 }
 
@@ -112,5 +121,9 @@
 
   .project{
     width: 25rem;
+  }
+
+  .project:nth-of-type(2){
+    margin-left: 0;
   }
 }
