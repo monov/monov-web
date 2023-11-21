@@ -6,11 +6,11 @@ import { FaGithub, FaLinkedin, FaInstagram, FaTelegram } from "react-icons/fa";
 const Footer = ({ active, hamActive, setHamActive }) => {
   return (
     <motion.div
-      key={hamActive ? hamActive : active}
+      key={active}
       initial={{ transform: "scaleX(0)" }}
       animate={{ transform: "scaleX(1)" }}
       transition={{ delay: 0.1 }}
-      className={`footer-body ${hamActive ? "active" : ""}`}
+      className={`footer-body`}
     >
       <motion.a
         initial={{ y: 44 }}

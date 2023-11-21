@@ -77,7 +77,7 @@
   align-items: center;
   justify-content: center;
   position: absolute;
-  margin-top: 30rem;
+  margin-top: 10rem;
 }
 
 .menu{
@@ -96,6 +96,24 @@
   width: 2rem;
   background: black;
   border-radius: 50%;
+}
+
+.dashboard{
+  position: fixed;
+  margin-top: calc(100dvh - 3.5rem);
+  font-size: 2rem;
+  height: 2rem;
+  display: none;
+}
+
+.dashboard.active{
+  display: flex;
+}
+
+.mom-wrapper{
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 @media ( width < 450px ){
