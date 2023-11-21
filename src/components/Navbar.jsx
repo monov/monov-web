@@ -3,11 +3,11 @@ import "./Navbar.css";
 import { motion } from "framer-motion";
 import { useState } from "react";
 
-const Navbar = ({ setActive, active }) => {
+const Navbar = ({ setActive, active, hamActive, setHamActive }) => {
   const handleClick = (act) => {
     setActive(act);
   };
-  const [hamActive, setHamActive] = useState(false);
+  
 
   const hamClick = () => {
     setHamActive((v) => !v);

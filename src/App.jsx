@@ -12,10 +12,11 @@ const App = () => {
   const location = useLocation();
   const currentUrl = location.pathname;
   const [active, setActive] = useState(currentUrl);
+  const [hamActive, setHamActive] = useState(false);
   return (
     <div className="app">
-      <Navbar setActive={setActive} active={active} />
-      <Footer active={active}/>
+      <Navbar setActive={setActive} active={active} hamActive={hamActive} setHamActive={setHamActive}/>
+      <Footer active={active} hamActive={hamActive} setHamActive={setHamActive}/>
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/blog" element={<Blog />}></Route>

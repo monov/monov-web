@@ -32,3 +32,14 @@
     border: solid 2px #1f1f1f;
   }
 }
+
+@media (width < 450px) {
+  .footer-body{
+    display: none;
+  }
+
+  .footer-body.active{
+    display: flex;
+    background: transparent;
+  }
+}
