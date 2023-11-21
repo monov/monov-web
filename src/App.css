@@ -8,3 +8,7 @@
   display: flex;
   justify-content: center;
 }
+
+.app.active{
+  height: 100dvh;
+}

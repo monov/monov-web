@@ -14,7 +14,7 @@ const App = () => {
   const [active, setActive] = useState(currentUrl);
   const [hamActive, setHamActive] = useState(false);
   return (
-    <div className="app">
+    <div className={`app ${hamActive ? "active" : ""}`}>
       <Navbar setActive={setActive} active={active} hamActive={hamActive} setHamActive={setHamActive}/>
       <Footer active={active} hamActive={hamActive} setHamActive={setHamActive}/>
       <Routes>
