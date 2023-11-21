@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
 import Home from "./pages/Home";
 import Blog from "./pages/Blog";
@@ -13,6 +13,17 @@ const App = () => {
   const currentUrl = location.pathname;
   const [active, setActive] = useState(currentUrl);
   const [hamActive, setHamActive] = useState(false);
+  useEffect(() => {
+    if (hamActive) {
+      document.body.classList.add("unscrollable");
+    } else {
+      document.body.classList.remove("unscrollable");
+    }
+
+    return () => {
+      document.body.classList.remove("unscrollable");
+    };
+  }, [hamActive]);
   return (
     <div className="app">
       <Navbar setActive={setActive} active={active} hamActive={hamActive} setHamActive={setHamActive}/>
