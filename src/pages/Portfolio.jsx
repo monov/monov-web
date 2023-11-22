@@ -15,7 +15,8 @@ const Portfolio = () => {
             Projects?
           </motion.h1>
           <div className="projects-wrapper">
-            <motion.div
+            <motion.a
+              href="https://rate-my-professor-alpha.vercel.app "
               initial={{ x: -100, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ delay: 0.2 }}
@@ -27,9 +28,10 @@ const Portfolio = () => {
               <div className="p1-wrapper">
                 🎓 Platform to Review Professors.
               </div>
-            </motion.div>
+            </motion.a>
 
-            <motion.div
+            <motion.a
+              href="https://github.com/monov/awesome-sakhib"
               initial={{ x: 100, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ delay: 0.2 }}
@@ -42,7 +44,7 @@ const Portfolio = () => {
               <div className="p2-wrapper">
                 📟 CLI tool that logs a random quote
               </div>
-            </motion.div>
+            </motion.a>
           </div>
         </section>
       </div>
