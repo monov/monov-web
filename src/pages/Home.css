@@ -17,9 +17,9 @@
 .home-pfp{
   height: 16rem;
   width: 16rem;
-  background: url("/src/assets/imgs/me.JPG");
-  background-position: 45% 60%;
-  background-size: 200%;
+  background: url("/src/assets/imgs/pfp.JPG");
+  background-position: 40% 50%;
+  background-size: 90%;
   display: flex;
   align-items: center;
   justify-content: center;
