@@ -6,12 +6,10 @@ import { BsCodeSlash } from "react-icons/bs";
 
 const Home = () => {
   return (
-    <div
-      className="home-body"
-    >
+    <div className="home-body">
       <div className="home-wrapper">
         <motion.section
-          initial={{ x: -100, opacity: 0 }}
+          initial={{ x: 100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ delay: 0.3 }}
           className="hero"
@@ -75,7 +73,13 @@ const Home = () => {
             </div>
           </div>
         </motion.section>
-        <section id="rap" className="rap">
+        <motion.section
+          id="rap"
+          className="rap"
+          initial={{ x: -100, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ delay: 0.3 }}
+        >
           <h1>I Listen To?</h1>
           <div className="rap-wrapper">
             <div className="rapper em">
@@ -101,7 +105,7 @@ const Home = () => {
               <span>Tupac</span>
             </div>
           </div>
-        </section>
+        </motion.section>
         <section className="history">
           <h1>History?</h1>
           <div className="meme"></div>

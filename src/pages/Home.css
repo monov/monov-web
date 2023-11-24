@@ -18,12 +18,13 @@
   height: 16rem;
   width: 16rem;
   background: url("/src/assets/imgs/pfp.JPG");
+  filter: brightness(2);
   background-position: 40% 50%;
   background-size: 90%;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: solid 2px var(--accent-color);
+  border: solid 2px rgb(0, 150, 100);
   border-radius: 100%;
   margin-top: 2rem;
 }
