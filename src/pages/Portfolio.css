@@ -74,7 +74,7 @@
 }
 
 .project:hover .projpic{
-  transform: rotate(5deg) scale(1.5);
+  transform: scale(1.5);
   filter: brightness(.5);
 }
 

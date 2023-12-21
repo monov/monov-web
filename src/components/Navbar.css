@@ -5,9 +5,11 @@
   justify-content: center;
   color: rgb(140, 140, 140);
   position: fixed;
-  backdrop-filter: blur(50px);
+  background: #1f1f1fd8;
+  backdrop-filter: blur(10px);
   width: 100%;
   z-index: 10;
+  border-bottom: solid 2px #3e3e3e;
 }
 
 .navbar-buttons-wrapper{
