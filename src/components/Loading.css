@@ -16,10 +16,9 @@
 
 .loader{
   height: 0.5rem;
-  width: 36rem;
+  width: 100%;
   background: var(--accent-color);
   position: absolute;
-  border-radius: 20px;
   transform-origin: left;
   box-shadow: 0 0 20px var(--accent-color);
   animation: anim 2s infinite;
