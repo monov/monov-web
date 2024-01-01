@@ -33,7 +33,7 @@ const Footer = ({ active, hamActive, setHamActive }) => {
         initial={{ y: 44 }}
         animate={{ y: 0 }}
         transition={{ delay: 0.6 }}
-        href="https://www.instagram.com/smnv_shokh/"
+        href="https://www.instagram.com/monov.exe/"
       >
         <FaInstagram className="footer-icon" />
       </motion.a>
@@ -42,7 +42,7 @@ const Footer = ({ active, hamActive, setHamActive }) => {
         initial={{ y: 44 }}
         animate={{ y: 0 }}
         transition={{ delay: 0.7 }}
-        href="https://t.me/smnv_shokh"
+        href="https://t.me/parker_lew"
       >
         <FaTelegram className="footer-icon" />
       </motion.a>

@@ -18,19 +18,18 @@
   height: 16rem;
   width: 16rem;
   background: url("/src/assets/imgs/pfp.JPG");
-  filter: brightness(2);
+
   background-position: 40% 50%;
   background-size: 90%;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: solid 2px rgb(0, 150, 100);
   border-radius: 100%;
   margin-top: 2rem;
-  border-bottom: solid 8px rgb(0, 150, 100);
+  border-bottom: solid 8px var(--accent-color);
   border-right: solid 4px #000;
   border-left: solid 4px #000;
-  border-top: solid 1px rgb(0, 150, 100);
+  border-top: solid 2px var(--accent-color);
 }
 
 section{
@@ -262,6 +261,7 @@ li{
   justify-content: center;
   overflow: hidden;
   cursor: pointer;
+  /* position: absolute; */
 }
 
 .rapper span{
@@ -315,10 +315,6 @@ li{
   background-position: center;
   background-size: cover;
 }
-
-
-
-
 
 .history{
   display: flex;
@@ -446,12 +442,27 @@ a{
   }
 
   .rap-wrapper{
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .rap{
     margin-top: 18rem;
   }
+
+  .rapper{
+    height: 14rem;
+    width: 11rem;
+  }
+
+  .kdot{
+    background-position: 100% 100%;
+    background-size: 100%;
+  }
+
+  .pac, .jid{
+    display: none;
+  }
+
 
   section{
     margin-top: 6rem;
