@@ -7,6 +7,7 @@ import { BsCodeSlash } from "react-icons/bs";
 const Home = () => {
   return (
     <div className="home-body">
+      <div className="decor"></div>
       <div className="home-wrapper">
         <motion.section
           initial={{ x: 100, opacity: 0 }}
@@ -51,6 +52,7 @@ const Home = () => {
           transition={{ delay: 0.3 }}
           id="code"
           className="tech-stack"
+          style={{ borderBottom: 'solid 8px #3e3e3e' }}
         >
           <div className="ts-wrapper">
             <div className="s-ts-wrapper">

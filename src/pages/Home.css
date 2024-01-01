@@ -27,6 +27,10 @@
   border: solid 2px rgb(0, 150, 100);
   border-radius: 100%;
   margin-top: 2rem;
+  border-bottom: solid 8px rgb(0, 150, 100);
+  border-right: solid 4px #000;
+  border-left: solid 4px #000;
+  border-top: solid 1px rgb(0, 150, 100);
 }
 
 section{
@@ -98,6 +102,10 @@ section{
   cursor: pointer;
   text-decoration: none;
   transition: .2s;
+  border-bottom: solid 8px #3e3e3e;
+  border-right: solid 4px #3e3e3e;
+  border-left: solid 4px #3e3e3e;
+  border-top: solid 1px #3e3e3e;
 }
 
 .graph-icon{
@@ -106,7 +114,6 @@ section{
 }
 
 .graph:nth-of-type(1){
-  border: solid 4px var(--accent-color);
   color: var(--accent-color);
   font-family: 'Ubuntu Mono', monospace;
 }
@@ -124,14 +131,12 @@ section{
 }
 
 .graph:nth-of-type(2) {
-  border: solid 4px rgb(0, 179, 255);
   color: rgb(0, 179, 255);
   font-family: Rap;
   font-size: 2.4rem;
 }
 
 .graph:nth-of-type(3) {
-  border: solid 4px rgb(231, 252, 0);
   color: rgb(231, 252, 0);
 }
 
@@ -151,6 +156,15 @@ section{
 .s-ts-wrapper, .s-ss-wrapper {
   text-align: center;
   font-family: 'Ubuntu Mono', monospace;
+  padding: 1rem;
+  height: 26rem;
+  background: #1f1f1fd8;
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border-bottom: solid 8px #3e3e3e;
+  border-right: solid 4px #3e3e3e;
+  border-left: solid 4px #3e3e3e;
+  border-top: solid 1px #3e3e3e;
 }
 
 .s-ts-wrapper h1{
@@ -211,6 +225,7 @@ li{
 
 .rap h1{
   font-size: 2.4rem;
+  margin-top: 2rem;
 }
 
 .rap{
@@ -236,7 +251,10 @@ li{
   display: flex;
   align-items: center;
   justify-content: center;
-  border: solid 2px var(--accent-color);
+  border-bottom: solid 8px #3e3e3e;
+  border-right: solid 4px #3e3e3e;
+  border-left: solid 4px #3e3e3e;
+  border-top: solid 1px #3e3e3e;
   border-radius: 10px;
   transition: .2s;
   display: flex;
@@ -266,42 +284,36 @@ li{
   background: url("/src/assets/imgs/eminem.jpg");
   background-position: 100% 20%;
   background-size: cover;
-  border-color: rgb(175, 128, 0);
 }
 
 .cole{
   background: url("/src/assets/imgs/cole.jpg");
   background-position: center;
   background-size: cover;
-  border-color: rgb(0, 153, 255);
 }
 
 .kdot{
   background: url("/src/assets/imgs/kdot.jpg");
   background-position: 100% 100%;
   background-size: cover;
-  border-color: rgb(175, 0, 0);
 }
 
 .nf{
   background: url("/src/assets/imgs/nf.jpg");
   background-position: center;
   background-size: cover;
-  border-color: rgb(104, 104, 104);
 }
 
 .jid{
   background: url("/src/assets/imgs/jid.jpg");
   background-position: 60% 10%;
   background-size: 150%;
-  border-color: rgb(254, 0, 203)
 }
 
 .pac{
   background: url("/src/assets/imgs/tupac.webp");
   background-position: center;
   background-size: cover;
-  border-color: rgb(0, 164, 25)
 }
 
 
@@ -329,12 +341,18 @@ li{
   background-size: 112%;
   border-radius: 20px;
   border: solid 2px yellow;
+  border-radius: 20px;
+  border-bottom: solid 8px #3e3e3e;
+  border-right: solid 4px #3e3e3e;
+  border-left: solid 4px #3e3e3e;
+  border-top: solid 1px #3e3e3e;
 }
 
 .history-wrapper{
   width: 80%;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  justify-content: center;
   justify-items: center;
 }
 
@@ -343,9 +361,8 @@ li{
   width: 20rem;
   background: gray;
   margin-top: 3rem;
-  border-radius: 20px;
   overflow: hidden;
-
+  border-radius: 10px;
 }
 
 .hist-pic{
@@ -356,6 +373,11 @@ li{
   justify-content: center;
   text-decoration: none;
   transition: .2s;
+  border-radius: 10px;
+  border-bottom: solid 8px #3e3e3e;
+  border-right: solid 4px #3e3e3e;
+  border-left: solid 4px #3e3e3e;
+  border-top: solid 1px #3e3e3e;
 }
 
 a{
@@ -395,6 +417,7 @@ a{
   background-size: cover;
 }
 
+
 @media ( width < 450px ){
   .hero{
     flex-direction: column;
@@ -411,7 +434,15 @@ a{
 
   .ts-wrapper{
     flex-direction: column;
-    margin-top: 14rem;
+    margin-top: 18rem;
+  }
+
+  .s-ts-wrapper{
+    height: 28rem;
+  }
+
+  .s-ts-wrapper, .s-ss-wrapper{
+    margin-top: 1.5rem;
   }
 
   .rap-wrapper{
@@ -424,7 +455,7 @@ a{
 
   section{
     margin-top: 6rem;
-  }
+  }  
 
   h1{
     margin-top: 2rem;
@@ -447,6 +478,11 @@ a{
     height: 22rem;
     width: 22rem;
   }
+
+  .rap h1{
+    margin-top: 10rem;
+  }
+
 }
 
 @media ( 450px < width < 1080px ){
