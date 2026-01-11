@@ -6,7 +6,7 @@ const Loading = () => {
     <div className="loading-body">
       <div className="loader-wrapper">
         <div className="loader"></div>
-        <p className="ltext">MonoV</p>
+        <p className="ltext">MonoV 2022</p>
       </div>
     </div>
   );
